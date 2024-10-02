@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Makeup Products</h1>
+
+        <!-- Filter Section -->
+        <div class="filters">
+            <div class="filter">
+                <h3>Filter by Brand</h3>
+                <label><input type="checkbox" class="brand-filter" value="Maybelline"> Maybelline</label>
+                <label><input type="checkbox" class="brand-filter" value="L'Oreal Paris"> L'Oreal Paris</label>
+                <label><input type="checkbox" class="brand-filter" value="Miss Rose"> Miss Rose</label>
+            </div>
+
+            <div class="filter">
+                <h3>Filter by Type</h3>
+                <label><input type="checkbox" class="type-filter" value="Lipstick"> Lipstick</label>
+                <label><input type="checkbox" class="type-filter" value="Foundation"> Foundation</label>
+                <label><input type="checkbox" class="type-filter" value="Mascara"> Mascara</label>
+            </div>
+
+            <div class="filter">
+                <h3>Filter by Price</h3>
+                <label><input type="checkbox" class="price-filter" value="low"> $0 - $25</label>
+                <label><input type="checkbox" class="price-filter" value="mid"> $25 - $50</label>
+                <label><input type="checkbox" class="price-filter" value="high"> $50+</label>
+            </div>
+
+            <button id="clearFilters">Clear Filters</button>
+        </div>
+
+       
+        <div class="products">
+            <div class="product" data-brand="Maybelline" data-type="Lipstick" data-price="low">
+                <h2>Red Lipstick</h2>
+                <p>Maybelline- $20</p>
+            </div>
+            <div class="product" data-brand="L'Oreal Paris" data-type="Foundation" data-price="mid">
+                <h2>Liquid Foundation</h2>
+                <p>L'Oreal Paris - $35</p>
+            </div>
+            <div class="product" data-brand="Miss Rose" data-type="Mascara" data-price="low">
+                <h2>Black Mascara</h2>
+                <p>Miss Rose - $15</p>
+            </div>
+            <div class="product" data-brand="Maybelline" data-type="Foundation" data-price="high">
+                <h2>Luxury Foundation</h2>
+                <p>Maybelline - $75</p>
+            </div>
+            <div class="product" data-brand="L'Oreal Paris" data-type="Lipstick" data-price="mid">
+                <h2>Matte Lipstick</h2>
+                <p>L'Oreal Paris - $30</p>
+            </div>
+            <div class="product" data-brand="Miss Rose" data-type="Mascara" data-price="high">
+                <h2>Waterproof Mascara</h2>
+                <p>Miss Rose- $55</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
